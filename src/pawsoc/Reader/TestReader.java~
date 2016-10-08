@@ -1,0 +1,25 @@
+package pawsoc.Reader;
+
+import java.sql.SQLException;
+
+import pawsoc.ConfigLoader;
+import pawsoc.GetConfig;
+
+public class TestReader {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		//Testen des Einlesens
+		GetConfig gc = new GetConfig();
+		String [] test = gc.getResult();
+		for (int i = 0; i < test.length; i++) {
+			System.out.println(test[i]);
+		}
+		
+		//Testen des Interpreters
+		ConfigLoader cl = new ConfigLoader();
+		
+		Reader readerMySQL = new Reader(cl, "mysql");
+		Reader readerPostGreSQL = new Reader(cl, "postgresql");
+		
+		System.out.println(readerMySQL.getFullData().get(0).toString());
+	}
+}

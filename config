@@ -1,0 +1,31 @@
+[mysql]
+localhost pawsoc 123456 myagent
+[PostgreSQL]
+localhost pawsoc 123456 posagent
+agentur1 agentur2 (time1,time2)
+name aname string+
+site hpage string
+telnr phone string
+mail email string
+time1 time2 number
+;
+auftrag1 auftrag2 (time1,time2)
+id aid number+
+ort place string
+anfang astart string
+ende aend number
+time1 time2 number
+- given number
+;
+arbeiter1 arbeiter2 arbeiter1
+arid arbid number+
+name arname string
+mobnr telnr number
+mail armail string
+;
+markt1 markt2 markt2
+kennr kennr number+
+adresse adr string
+name name string
+telnr mobnr number
+;

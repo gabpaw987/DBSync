@@ -1,0 +1,29 @@
+[mysql]
+localhost pawsoc 123456 mybank
+[PostgreSQL]
+localhost pawsoc 123456 posbank
+konto1 konto2 konto1
+knr kn number+
+name nname string
+- pin string
+- iban string
+- erstkonto number
+;
+besitzer1 besitzer2 (time1,time2)
+name nname string+
+alt age number
+adr address string
+time1 time2 number
+;
+institut1 institut2 institut1
+blz banklz number+
+bname bankname string
+hpage homepage string
+adresse adr string
+;
+kontotyp1 kontotyp2 kontotyp2
+ktyp ktyp string+
+start dbegin string
+end dend string
+mntl mntl number
+;
